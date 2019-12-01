@@ -1,7 +1,10 @@
 #! /bin/bash
-# comment
+# 変数
 
-echo "hello world"
-# echo 'hello world'
+readonly name="isaac"
+# name="horse"
 
-echo "foo"; echo "bar"
+echo "morning $name"
+echo "hello $name"
+echo "bye ${name}san"
+echo 'bye ${name}san'
