@@ -1,15 +1,24 @@
 #!/bin/bash
 
-hello() {
-  # echo "hello ...."
-  # echo "hello .... $1"
+# hello() {
+#   # echo "hello ...."
+#   # echo "hello .... $1"
 
-  if [[ $1 == "isaac" ]]; then
-    return 0
-  else
-    return 1
-  fi
+#   if [[ $1 == "isaac" ]]; then
+#     return 0
+#   else
+#     return 1
+#   fi
+# }
+
+# hello isaac; echo $?
+# hello test; echo $?
+
+hello() {
+  # name="isaac"
+  local name="isaac"
+  echo "hello ..."
 }
 
-hello isaac; echo $?
-hello test; echo $?
+hello
+echo $name
