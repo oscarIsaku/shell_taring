@@ -1,0 +1,15 @@
+#!/bin/bash
+
+hello() {
+  # echo "hello ...."
+  # echo "hello .... $1"
+
+  if [[ $1 == "isaac" ]]; then
+    return 0
+  else
+    return 1
+  fi
+}
+
+hello isaac; echo $?
+hello test; echo $?
